@@ -6,7 +6,6 @@ async function getRates () {
         const currency = selected.options[ selected.selectedIndex ].text;
         const res = await axios.get( `https://open.er-api.com/v6/latest/${currency}` );
         const data = res.data;
-        console.log( data.time_last_update_utc );
         for ( const keys in data.rates ) {
             document.getElementById( 'result' ).innerHTML += `
             <tr>
