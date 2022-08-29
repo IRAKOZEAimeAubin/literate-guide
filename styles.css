@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+section.main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+span.header {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #85bb65;
+}
+
+select.currency-select {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    color: #85bb65;
+    border: solid #85bb65;
+    border-radius: 0.6rem;
+}
+
+table.rates-table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    margin: 1.6rem 0;
+    min-width: 25rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(4, 3, 15, 0.4),
+}
+
+table.rates-table thead tr {
+    text-transform: uppercase;
+    background: #85bb65;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 700;
+}
+
+table.rates-table th,
+table.rates-table td {
+    padding: 0.8rem 1rem;
+}
+
+table.rates-table tbody tr {
+    border-bottom: 0.06rem solid #0a0a0a;
+    color: #0a0a0a;
+}
+
+table.rates-table tbody tr:nth-of-type(even) {
+    background: #DEDEDE;
+}
+
+table.rates-table tbody tr:nth-of-type(:last-of-type) {
+    border-bottom: #85bb65;
+}
+
+table.rates-table tbody tr:hover {
+    font-weight: 700;
+    color: #85bb65;
+}
