@@ -9,7 +9,7 @@ async function getRates () {
         for ( const keys in data.rates ) {
             document.getElementById( 'result' ).innerHTML += `
             <tr>
-                <td>+${ keys }</td>
+                <td>${ keys }</td>
                 <td>${ data.rates[ keys ] }</td>
                 <td>${ data.time_last_update_utc }</td>
                 <td>${ data.time_next_update_utc }</td>
